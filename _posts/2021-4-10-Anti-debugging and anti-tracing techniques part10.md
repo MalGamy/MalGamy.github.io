@@ -26,9 +26,10 @@ malware is analyzed in a user-mode debugger such as x32dbg and the most widely u
 be going through anothor very commen technique that malware authors use it, [CheckRemoteDebuggerPresent()](https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-checkremotedebuggerpresent) from kernel32.dll.
 
 <!-- more -->
+embed_url("https://user-images.githubusercontent.com/74544712/117498127-aa6b6280-af79-11eb-9d46-b8596f16f9bb.mp4
+") %>%
+  use_start_time("1m32") %>%
+  use_align("center")
 
-https://player.vimeo.com/video/<https://user-images.githubusercontent.com/74544712/117498127-aa6b6280-af79-11eb-9d46-b8596f16f9bb.mp4>
 
-
-https://user-images.githubusercontent.com/74544712/117498127-aa6b6280-af79-11eb-9d46-b8596f16f9bb.mp4
 
