@@ -1,4 +1,4 @@
-<div dir="rtl"> 
+ 
 ---
 title: Anti-debugging and anti-tracing techniques part4
 layout: single
@@ -18,10 +18,10 @@ toc: true
 toc_label: Table of Contents
 toc_sticky: true
 ---
+<div dir="rtl">
+# المقدمه
 
-# Introducation 
-<div> 
-<div dir="rtl"> 
+
 السلام عليكم دا هيكون اول تشالنج ريفرس انجنير هتكلم عنه , وال هيكون دايما من نوعيه crackmes ...
 تقدر تنزله من هنا https://github.com/MalGamy/Crackmes-
 ف الاول انا بكون محتاج افهم ال behaviour بتاع البرنامج ال انا شغال عليه دا عن طريق اني ارن البرنامج واشوف هو بيطلب مني ايه ..
