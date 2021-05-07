@@ -1,3 +1,4 @@
+<div dir="rtl"> 
 ---
 title: Anti-debugging and anti-tracing techniques part4
 layout: single
@@ -19,6 +20,7 @@ toc_sticky: true
 ---
 
 # Introducation 
+<div> 
 <div dir="rtl"> 
 السلام عليكم دا هيكون اول تشالنج ريفرس انجنير هتكلم عنه , وال هيكون دايما من نوعيه crackmes ...
 تقدر تنزله من هنا https://github.com/MalGamy/Crackmes-
