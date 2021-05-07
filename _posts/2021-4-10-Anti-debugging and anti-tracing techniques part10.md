@@ -19,11 +19,14 @@ toc_sticky: true
 ---
 
 # Introducation 
-
-the last week i published [IsDebuggerPresent()](https://malgamy.github.io/Anti-debugging-and-anti-tracing-techniques/)technique which function available in the kernel32.dll library.
-This function is often used in malware to complexify the reverse engineering because it will take different paths in the program’s flow when the 
-malware is analyzed in a user-mode debugger such as x32dbg and the most widely used anti-debugging method in Windows, Here i will
-be going through anothor very commen technique that malware authors use it, [CheckRemoteDebuggerPresent()](https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-checkremotedebuggerpresent) from kernel32.dll.
+ف الاول انا بكون محتاج افهم ال behaviour بتاع البرنامج ال انا شغال عليه دا عن طريق اني ارن البرنامج واشوف هو بيطلب مني ايه ..
+ف الخطوه الاول انا بالفعل عملت  رن للبرنامج ومن الواضح انه كان محتاجني ادخله باسورد عشان يقارنه بالباسورد الصحيحه فانا دخلت اي باس واما دوست Enter طالعي ال BadMessage وال كانت عباره عن انك ف الطريق الخطاء ...
+وال فهمته من هنا اني التشالنج بيطلب مني باس يقارنه بالباس الصحيح ال موجود بالميموري وبعدين يظهر رسالتين لو الباس صحيح هيظهر ال GoodMessage ولو الباس غلط هيظهر ال BadMessage ودا بالفعل ال حصل 
+ف الخطوه التانيه وال بعمله مع اي تشالنج اني اشوفه Packed او لا ولو مش عارف يعني ايه Packed فدا عباره عن اسلوب بيستخدمه الناس ال بتبرمج البرامج او الناس ال بكتب مالور عشان تصعب عمليه الريفرس انجينر فانا فتحت التشالنج ف اداه اسمها DIE ومن الواضح ان التشالنج معمولها Packed بال UPX وديت اداه ممكن تنزلها من الجيت هب لانه مفتوحه المصدر + انها بتسخدم ف عمليه Packed وال unpacking 
+ف الخطوه التالته انا هنزل الاداه ولكن انا منزلها بالفعل فهنسخ  UPX.exe ف نفس المسار بتاع التشالنج عشان اسهل ع نفسي وبعد كدا هرن الاداه ونشوف ال Commend ودا هنستخدم منه d- عشان نعمل unpacking  للتشالنج وال Options هنستخدم منه ال o- ودا عشان نسمي ال output بتاعنا ودلوقتي هعمل عمليه ال unpacking بالكومند دا upx.exe -d -o unpackingFile.exe challenge.exe
+,وبالفعل عملنا unpacking للتشالنج بتاعتنا 
+ف الخطوه ديت هحول افهم التشالنج استتك اكتر من خلال اني افتحها ف ال IDA pro واحلل الكود ال في ال main function وهنفهم من الكود انه بيحول يخزن الباس ال احنا دخلنا ف EAX عشان عمليه المقارنه ال هتكون ف السطر التاني مع الباس الصحيح ال موجود اصلا ف الميموري ولو احنا دخلنا الباس الصحيح هيروح يطبع GoodMessage ولو دخلنا الباس الغلط هيروح يطبع BadMessage يبقا انا عرفت مكان الباس الصحيح ال موجود اصلا ف الميموري هنسخ الادرس 
+وفى الخطوه ديت هروح لمكان الادرس ف ال X32dbg  هلقي ان الباس الصحيح متخزن ف [EPB-10] هرن البرنامج وهدخله الباس الغلط هلقي البرنامج وقف مكان ما حنا حطنا البريك بوينت هروح ع registers هشوف الادرس بتاع الاستاك هلقى ف اخره 48 يعني لو نقصنا منها عشره هيبقوا 38 فانا  ف الاستاك واخد القيمه ال هي طبعا بال HEX ونا عايزها طبعا بال decimal هنحولها ع اي موقع ونجي نجرب القيمه ال طلعت وبالفعل القيمه صحيح وعطنا ال GoodMessage
 <!-- more -->
 <video width="100%" height="100%" controls>
   <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117502050-4350ac80-af7f-11eb-8d65-21c80648c7eb.mp4">
