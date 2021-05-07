@@ -27,7 +27,7 @@ be going through anothor very commen technique that malware authors use it, [Che
 
 <!-- more -->
 
-<video class='center' width="100%" height="100%" controls>
+<video width="1000" height="1000" controls>
   <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117502050-4350ac80-af7f-11eb-8d65-21c80648c7eb.mp4">
 </video>
 
