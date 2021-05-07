@@ -1,5 +1,5 @@
 ---
-title: Anti-debugging and anti-tracing techniques part4
+title: بالعربي-crackmes 
 layout: single
 comments: true
 share: true
@@ -21,8 +21,7 @@ toc_sticky: true
 <div dir="rtl">
  
 # المقدمه
-
-
+<br>
 السلام عليكم دا هيكون اول تشالنج ريفرس انجنير هتكلم عنه , وال هيكون دايما من نوعيه crackmes ...
 تقدر تنزله من هنا https://github.com/MalGamy/Crackmes-
 ف الاول انا بكون محتاج افهم ال behaviour بتاع البرنامج ال انا شغال عليه دا عن طريق اني ارن البرنامج واشوف هو بيطلب مني ايه ..
