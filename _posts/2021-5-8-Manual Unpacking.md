@@ -17,11 +17,9 @@ toc: true
 toc_label: Table of Contents
 toc_sticky: true
 ---
-<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/74544712/117522272-ac054c80-afb2-11eb-8a6c-86e3ca327724.png" width="100%">
 </p>
-<br>
 
 # Introducation
 
