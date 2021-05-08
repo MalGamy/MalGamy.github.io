@@ -56,8 +56,8 @@ In this Demo, I will show how to identify tial jump to reach the OEP, dump the u
 * I dump the process by using OllyDumpEx
 * I open the Scylla to fix import table as you can see in the video
 * Now you can load unpacking malware in IDA pro, see the huge functions and huge strings so you can analyze the malware
-<p style="margin-bottom:0;">>
-<video width="650" height="750" controls>
+<p style="margin-bottom:0;">
+<video width="50%" height="50%" controls>
   <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
 </video>
 <p>
