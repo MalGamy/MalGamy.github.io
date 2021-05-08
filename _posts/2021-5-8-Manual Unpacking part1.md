@@ -1,5 +1,5 @@
 ---
-title:  
+title: Manual Unpacking part1 
 layout: single
 comments: true
 share: true
@@ -21,16 +21,17 @@ toc_sticky: true
 <img src="https://user-images.githubusercontent.com/74544712/117522272-ac054c80-afb2-11eb-8a6c-86e3ca327724.png" width="100%">
 </p>
 
-# Introducation
+# Introduction
 
-Malware is sometimes packed so it is important to unpacking the malware to resume the process of analysis, packing is very a common technique used by malware author to handle the process of reverse engineering and work of malware analyst and detect by anti-virus and firewalls, the process of unpacking is producing another executable from malware.
+Malware is sometimes packed so it is important to unpack the malware to resume The analysis process, packing is very a common technique used by malware author to handle the process of reverse engineering and work of malware analyst
+packing helps malware to hide from anti-virus and Firewall and the process of unpacking produces another executable from malware.
 
 let us do our manual unpacking on Maze ransomware with a common technique called Tail jump
 <!-- more -->
 
 # Sample
 
-We can donaload sample from [here](https://app.any.run/tasks/56248422-b327-4226-8a79-3155e24b999d/)
+We can download sample from [here](https://app.any.run/tasks/56248422-b327-4226-8a79-3155e24b999d/)
 
 # Tools
 
@@ -41,21 +42,22 @@ We can donaload sample from [here](https://app.any.run/tasks/56248422-b327-4226-
 
 # Tail jump 
 
-The tail is the instruction that you can find after the stub code and used to reach to the OEP 
-1. jump instruction
-2. ret or call instruction
-we can identify the tail jump in IDA Pro and x32dbg and appears as the last instruction
+The tail is the instruction that you can find after the stub code and used to reach to the OEP.
+1. jump instruction.
+2. ret or call instruction.
+
+we can identify the tail jump in IDA Pro and x32dbg and appears as the last instruction.
 
 # Demo 
 
-In this Demo, I will show how to identify tial jump to reach the OEP, dump the unpacking malware and fix the unpacking malware 
+In this Demo, I will show how to identify tail jump to reach the OEP, dump unpack malware and fix unpack malware 
 * I will load the sample in IDA pro to identify the tail jump
 * we identify the jump and see the address that malware jump to it after executing stub code to write unpacking malware in this place to execute it without any detection
-* I will copy an address of the tail jump to go to X36dbg
+* I will copy an address of the tail jump so i open x32dbg and press ```ctrl + G ``` to paste the address
 * set breakpoint on this address and  press ```f9``` and press step over ```f8``` to reach the OEP 
 * I dump the process by using OllyDumpEx
 * I open the Scylla to fix import table as you can see in the video
-* Now you can load unpacking malware in IDA pro, see the huge functions and huge strings so you can analyze the malware
+* Now you can load unpack malware in IDA pro, see the huge functions and a lot of strings so you can analyze the malware
 <p style="margin-bottom:0;">
 <video width="100%" height="100%" controls>
   <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
