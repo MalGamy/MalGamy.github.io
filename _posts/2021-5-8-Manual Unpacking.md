@@ -45,7 +45,7 @@ We can donaload sample from [here](https://app.any.run/tasks/56248422-b327-4226-
 
 
 
-<video width="320" height="240" controls>
+<video width="500" height="500" controls>
   <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
 </video>
 
