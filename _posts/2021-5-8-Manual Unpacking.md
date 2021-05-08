@@ -1,5 +1,5 @@
 ---
-title: Anti-debugging and anti-tracing techniques part4
+title: Manual Unpacking 
 layout: single
 comments: true
 share: true
@@ -26,7 +26,7 @@ Malware is sometimes packed so it is important to unpacking the malware to resum
 <img src="https://user-images.githubusercontent.com/74544712/117522272-ac054c80-afb2-11eb-8a6c-86e3ca327724.png" width="80%">
 </p>
 <br>
-let us do our manual unpacking on Maze ransomware with a common technique that is called Tail jump
+let us do our manual unpacking on Maze ransomware with a common technique which called Tail jump
 <!-- more -->
 
 # Sample
@@ -39,4 +39,17 @@ We can donaload sample from [here](https://app.any.run/tasks/56248422-b327-4226-
 2. x32dbg
  
 # Tail jump 
+
+
+
+
+
+
+
+<video width="320" height="240" controls>
+  <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
+</video>
+
+
+
 
