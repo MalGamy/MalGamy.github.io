@@ -59,7 +59,6 @@ In this Demo, I will show how to identify tail jump to reach the OEP, dump unpac
 * I dump the process by using OllyDumpEx
 * I open the Scylla to fix import table as you can see in the video
 * Now you can load unpack malware in IDA pro, see the huge functions and a lot of strings so you can analyze the malware
-https://user-images.githubusercontent.com/74544712/117542297-5b283f00-b018-11eb-9be8-5f0918b808b5.mp4
 <p style="margin-bottom:0;">
 <video width="100%" height="100%" controls>
 <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117542297-5b283f00-b018-11eb-9be8-5f0918b808b5.mp4"> 
