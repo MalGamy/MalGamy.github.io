@@ -52,16 +52,15 @@ In this Demo, I will show how to identify tial jump to reach the OEP, dump the u
 * I will load the sample in IDA pro to identify the tail jump
 * we identify the jump and see the address that malware jump to it after executing stub code to write unpacking malware in this place to execute it without any detection
 * I will copy an address of the tail jump to go to X36dbg
-<p>
-<video width="650" height="750" controls>
-  <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
-</video>
-<p>
 * set breakpoint on this address and  press ```f9``` and press step over ```f8``` to reach the OEP 
 * I dump the process by using OllyDumpEx
 * I open the Scylla to fix import table as you can see in the video
 * Now you can load unpacking malware in IDA pro, see the huge functions and huge strings so you can analyze the malware
-
+<p style="margin-bottom:0;">>
+<video width="650" height="750" controls>
+  <source type="video/mp4" src="https://user-images.githubusercontent.com/74544712/117524672-9c8c0080-afbe-11eb-9721-8317ad5ef543.mp4">
+</video>
+<p>
 
 
 
