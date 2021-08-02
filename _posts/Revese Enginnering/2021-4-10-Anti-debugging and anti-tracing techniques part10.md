@@ -2,7 +2,7 @@
 title: Anti-debugging and anti-tracing techniques part3
 classes: wide
 header:
-  teaser: /img/h1.png
+  teaser: /img/Anti.png
 ribbon: MidnightBlue
 categories:
   - Revese Enginnering 
