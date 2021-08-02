@@ -1,5 +1,5 @@
 ---
-title: Anti-debugging part5
+title: Anti-debugging 0x05
 classes: wide
 header:
   teaser: /img/Anti.png
