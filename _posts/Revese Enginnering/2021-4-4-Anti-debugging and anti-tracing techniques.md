@@ -20,8 +20,6 @@ toc: true
 
 ![600px-IsDebuggerPresent-example](https://user-images.githubusercontent.com/74544712/113628587-61b44700-9665-11eb-897c-e9cc80efcb1b.png)
 
-
-
 ### Description 
 
 [IsDebuggerPresent()](https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-isdebuggerpresent) is a function available in the kernel32.dll library. This function is often used in malware to complexify the reverse engineering because it will take different paths in the program's flow when the malware is analyzed in a user-mode debugger such as x32dbg and the most widely used anti-debugging method in Windows
@@ -33,12 +31,12 @@ toc: true
 IsDebuggerPresent returns 1 if the process is being debugged or returns 0 if the process is not being debugged . This API simply reads the PEB!BeingDebugged byte-flag (located at offset 2 in the PEB structure Circumventing it is as easy as setting PEB!BeingDebugged to 0.
 ### bypass IsDebuggerPresent with x32dbg 
 if you want your application never check it do this:
-#### --> stage(1)
+### stage(1)
 * Press ```Alt + e``` or open view and select ```Symbol Info``` modules window.
 
 ![جميل](https://user-images.githubusercontent.com/74544712/113626598-a8ed0880-9662-11eb-88b8-318f62bcf6d5.png)
 
-#### --> stage(2)
+### stage(2)
 
 * Select ```C:\WINDOWS\sysWoW64\kernel32.dll ``` and press ```ctrl + N```.
 
@@ -48,7 +46,7 @@ if you want your application never check it do this:
 
 ![modification](https://user-images.githubusercontent.com/74544712/113626714-cc17b800-9662-11eb-872d-5f953da28651.png)
 
-#### --> stage(3) 
+### stage(3) 
 
 * run the program and wait your program break on this op-code.
  
@@ -59,7 +57,7 @@ if you want your application never check it do this:
 ![text2](https://user-images.githubusercontent.com/74544712/113631729-2c5e2800-966a-11eb-8179-cbbc512ef415.png)
 
 
-#### --> stage(4)
+### stage(4)
 
 * if jump happen on this op-code change it to ```nop``` and if doesn't happen change it to ```jmp```.
 
@@ -68,7 +66,7 @@ if you want your application never check it do this:
 
 * save your program. if you don't know how to save modifed code in ```x32dbg``` just search it.
 
-#### Reference
+### Reference
 
 * https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-isdebuggerpresent
 
