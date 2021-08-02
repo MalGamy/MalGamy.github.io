@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Penetration Testing"
-    url: /categories/#penetration-testing
-  - title: "Red Teaming"
-    url: /categories/#red-teaming
+  - title: "Revese Enginnering"
+    url: /categories/#Revese-Enginnering
+  - title: "Malware Analysis"
+    url: /categories/#Malware-Analysis
   - title: "CTF Writeups"
     url: /categories/#ctf-writeups
   - title: "Tutorials"
