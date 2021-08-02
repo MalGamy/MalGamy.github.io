@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "NoRed0x"
+title                    : "MalGamy"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "karim habeeb"
-description              : "Penetration Testing - Reverse Engineering - Exploit Development"
+name                     : "Gameel Ali"
+description              : "Malware Analysis - Reverse Engineering - Thread Hunting"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Karim Habeeb"
+  name             : "Gameel Ali"
   avatar           : /img/redteampng.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "penetration testing & Red teaming"
+  bio              : "Malware analysis & Reverse engineering"
 
   email            :
   links:
