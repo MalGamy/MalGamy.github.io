@@ -1,21 +1,12 @@
 ---
-title: Anti-debugging and anti-tracing techniques part_2
-layout: single
-comments: true
-share: true
-related: true
-author_profile: true
-permalink: "/:title/"
-tags:
-- malware analysis 
-- anti-debugging
-- anit-tracing
+title: Anti-debugging 0x02
+classes: wide
+header:
+  teaser: /img/Anti.png
+ribbon: MidnightBlue
 categories:
-- Articles
-date: '2021-4-7 10-00-00 +0000'
+  - Revese Enginnering 
 toc: true
-toc_label: Table of Contents
-toc_sticky: true
 ---
 
 ---> Anti-debugging tricks are meant to ensure that the codes are not working under the
