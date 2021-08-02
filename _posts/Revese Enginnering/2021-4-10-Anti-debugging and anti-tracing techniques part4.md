@@ -1,5 +1,5 @@
 ---
-title: Anti-debugging and anti-tracing techniques part4
+title: Anti-debugging 0x04
 layout: single
 comments: true
 share: true
