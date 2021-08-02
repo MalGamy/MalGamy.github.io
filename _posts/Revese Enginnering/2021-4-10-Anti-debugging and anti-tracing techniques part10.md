@@ -1,22 +1,14 @@
 ---
 title: Anti-debugging and anti-tracing techniques part3
-layout: single
-comments: true
-share: true
-related: true
-author_profile: true
-permalink: "/:title/"
-tags:
-- malware analysis 
-- anti-debugging
-- anit-tracing
+classes: wide
+header:
+  teaser: /img/h1.png
+ribbon: MidnightBlue
 categories:
   - Revese Enginnering 
-date: '2021-4-4 11-00-00 +0000'
 toc: true
-toc_label: Table of Contents
-toc_sticky: true
 ---
+
 # Introduction
 
 
