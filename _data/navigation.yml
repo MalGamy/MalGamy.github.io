@@ -1,0 +1,20 @@
+# main links
+main:
+  - title: "Penetration Testing"
+    url: /categories/#penetration-testing
+  - title: "Red Teaming"
+    url: /categories/#red-teaming
+  - title: "CTF Writeups"
+    url: /categories/#ctf-writeups
+  - title: "Tutorials"
+    url: /categories/#tutorials
+  - title: "All Categories"
+    url: /categories
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  # - title: "Quick-Start Guide"
+  # url: https://google.com
