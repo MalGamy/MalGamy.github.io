@@ -25,7 +25,9 @@ toc: true
 [IsDebuggerPresent()](https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-isdebuggerpresent) is a function available in the kernel32.dll library. This function is often used in malware to complexify the reverse engineering because it will take different paths in the program's flow when the malware is analyzed in a user-mode debugger such as x32dbg and the most widely used anti-debugging method in Windows
 ### Syntax
 
-```BOOL IsDebuggerPresent();
+```
+BOOL IsDebuggerPresent();
+
 ```
 ### Return value
 IsDebuggerPresent returns 1 if the process is being debugged or returns 0 if the process is not being debugged . This API simply reads the PEB!BeingDebugged byte-flag (located at offset 2 in the PEB structure Circumventing it is as easy as setting PEB!BeingDebugged to 0.
