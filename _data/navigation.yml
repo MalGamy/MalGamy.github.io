@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Revese Enginnering"
-    url: /categories/#Revese-Enginnering
+    url: /categories/#revese-enginnering
   - title: "Malware Analysis"
-    url: /categories/#Malware-Analysis
+    url: /categories/#malware-analysis
   - title: "CTF Writeups"
     url: /categories/#ctf-writeups
   - title: "Tutorials"
